@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    app:layout_anchorGravity="center_vertical">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10.7">
+
+
+        <ImageButton
+
+            android:id="@+id/bEditar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_edit"
+
+
+            />
+
+        <ImageButton
+
+            android:id="@+id/bBorrar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="0dp"
+
+
+            android:layout_marginRight="0dp"
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.65"
+            app:layout_constraintLeft_toRightOf="@+id/bEditar"
+            app:layout_constraintRight_toLeftOf="@+id/bAgregar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+
+        <ImageButton
+
+            android:id="@+id/bAgregar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_add"
+
+
+            />
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5">
+
+
+        <TextView
+            android:id="@+id/tvNumero"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+
+
+
+            android:text="Fecha"
+
+            />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20">
+
+
+        <TextView
+
+            android:id="@+id/tvFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+
+
+
+            android:text="Entrada"
+
+            />
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10.7">
+
+
+        <TextView
+
+            android:id="@+id/tvEntrada1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+
+
+
+            android:text="Entrada"
+
+            />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10.7">
+
+
+        <TextView
+
+            android:id="@+id/tvSalida1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+
+
+
+            android:text="Salida"
+
+            />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10.7">
+
+
+        <TextView
+
+            android:id="@+id/tvEntrada2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+
+
+
+            android:text="Entrada"
+
+            />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10.7">
+
+
+        <TextView
+
+            android:id="@+id/tvSalida2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+
+
+
+            android:text="Salida"
+
+            />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10.7">
+
+
+        <TextView
+
+            android:id="@+id/tvHoras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+
+
+
+            android:text="Horas"
+
+            />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10.7">
+
+
+        <TextView
+
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+
+
+
+            android:text="Total"
+
+            />
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvNombreTrabajador"-->
+        <!--style="@style/session"-->
+        <!--android:text="Trabajador" />-->
+
+    <!--<include-->
+        <!--android:id="@+id/S1"-->
+        <!--style="@style/session"-->
+        <!--layout="@layout/item_session_dia" />-->
+
+    <!--<include-->
+        <!--android:id="@+id/S2"-->
+        <!--style="@style/session"-->
+        <!--layout="@layout/item_session_dia" />-->
+
+    <!--<include-->
+        <!--android:id="@+id/S3"-->
+        <!--style="@style/session"-->
+        <!--layout="@layout/item_session_dia" />-->
+
+    <!--<include-->
+        <!--android:id="@+id/S4"-->
+        <!--style="@style/session"-->
+        <!--layout="@layout/item_session_dia" />-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/bEditar"-->
+        <!--style="@style/session"-->
+        <!--app:srcCompat="@android:drawable/ic_menu_edit" />-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvHorasS1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="HorasS1" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvTotalHastaAhoraS1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="TotalHastaAhoraS1" />-->
+    <!--</LinearLayout>-->
+</LinearLayout>

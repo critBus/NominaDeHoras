@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="session"  >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <!--<declare-styleable name="AppBarLayout">    -->
+        <!--<attr name="app:layout_constraintTop_toTopOf"/> -->
+    <!--</declare-styleable>-->
+    <!--<declare-styleable name="AppBarLayout">-->
+        <!--<attr name="elevation"/>-->
+        <!--<attr name="android:background"/>-->
+        <!--<attr format="boolean" name="expanded"/>-->
+    <!--</declare-styleable>-->
+    <!--<style name="TextView_header" >-->
+
+        <!--<item name="android:layout_width">wrap_content</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+
+        <!--<item name="android:layout_marginTop">0dp</item>-->
+        <!--<item name="android:layout_marginBottom">0dp</item>-->
+        <!--<item name="android:layout_marginRight">0dp</item>-->
+        <!--<item name="android:layout_marginLeft">0dp</item>-->
+
+        <!--<item name="app:layout_constraintTop_toTopOf">parent</item>-->
+        <!--<item name="app:layout_constraintBottom_toBottomOf">parent</item>-->
+        <!--<item name="app:layout_constraintRight_toRightOf">parent</item>-->
+        <!--<item name="app:layout_constraintLeft_toLeftOf">parent</item>-->
+
+
+
+    <!--</style>-->
+
+</resources>

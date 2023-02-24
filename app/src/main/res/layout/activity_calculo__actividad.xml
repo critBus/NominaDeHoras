@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.rene.nominadehoras.Calculo_Actividad">
+
+    <!--android:hint="Horas ###:##"-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textField"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+        ​
+
+        <maskedEditText.MaskedEditText
+            android:id="@+id/et_valor_entrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Horas ###:##"
+            android:inputType="number"
+            mask:allowed_chars="1234567890"
+            mask:mask="###:##" />
+        ​
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_resultado_del_calculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textField" />
+
+    <LinearLayout
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/textField"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/sw_editar_multiplicador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="5"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="242dp" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textField2"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="13.94"
+            android:hint="Multiplicador">
+            ​
+
+            <EditText
+                android:id="@+id/et_valor_multiplacador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            ​
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageButton
+            android:id="@+id/bt_guardar_multiplicador"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:onClick="apretoGuardarMultiplicador"
+            app:srcCompat="@android:drawable/ic_menu_save" />
+
+        <ImageButton
+            android:id="@+id/bt_default_multiplcador"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:onClick="apretoDefaultMultiplicador"
+            mask:srcCompat="@android:drawable/stat_notify_sync" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
